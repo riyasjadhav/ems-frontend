@@ -1,37 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const ListEmployeeComponent = () => {
-
-    const dummyData = [
-        {
-            "id": 1,
-            "firstName": "John",
-            "lastName": "Doe",
-            "email": "john@gmail.com"
-        },
-        {
-            "id": 2,
-            "firstName": "Sam",
-            "lastName": "Doe",
-            "email": "sam@gmail.com"
-        },
-        {
-            "id": 3,
-            "firstName": "RamJohn",
-            "lastName": "Doe",
-            "email": "ram@gmail.com"
-        }
-    ]
-
-
 
 
 
     return (
-        <div>
+        <div className='containers'>
 
-            <h2>List of Employees</h2>
-            <table>
+            <h2 className='text-center'>List of Employees</h2>
+            <table className='table table-striped table-bordered'>
                 <thead>
                     <tr>
                         <th>Employee Id</th>
